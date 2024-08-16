@@ -1,3 +1,6 @@
+/**
+ * Service class for interacting with the Hugging Face API.
+ */
 export class HuggingFaceService {
     private token: string;
 
