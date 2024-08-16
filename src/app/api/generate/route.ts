@@ -9,7 +9,14 @@ import { ResponseFactory } from './responseFactory';
  * @returns {Response} - The generated audio as an HTTP response.
  */
 export async function POST(request: Request): Promise<Response> {
-    const requestBody = await request.json();
+    let requestBody;
+    try {
+        requestBody = await request.json();
+    } catch (error) {
+        // Handle the error gracefully
+        console.error('Error parsing request body:', error);
+        return new Response('Invalid JSON', { status: 400 });
+    }
 
     // Validate the request
     RequestValidator.validate(requestBody);

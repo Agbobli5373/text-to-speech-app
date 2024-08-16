@@ -1,3 +1,5 @@
+
+
 /**
  * Validates the request body for generating text-to-speech.
  * @param requestBody - The request body object.
@@ -6,7 +8,7 @@
  * @throws {Error} If the 'Hugging Face Access Token' is missing.
  */
 export class RequestValidator {
-    static validate(requestBody: any): void {
+    static validate(requestBody: RequestBody): void {
         if (!requestBody.modelUrl) {
             throw new Error("Missing 'model url' field in the request body");
         }
