@@ -2,11 +2,8 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
-
 import Link from "next/link";
 import { Menu } from "lucide-react";
-
-
 
 export function Header() {
   return (
@@ -16,11 +13,14 @@ export function Header() {
           href="#"
           className="flex items-center gap-2 text-lg font-semibold md:text-base"
         >
-          <span className="font-bold text-white bg-black px-1 rounded-md transition-transform transform hover:scale-110">Text</span>
-          <span className="font-bold text-black bg-white px-1 rounded-md transition-transform transform hover:scale-110">Speech</span>
+          <span className="font-bold text-white bg-black px-1 rounded-md transition-transform transform hover:scale-110">
+            Text
+          </span>
+          <span className="font-bold text-black bg-white px-1 rounded-md transition-transform transform hover:scale-110">
+            Speech
+          </span>
         </Link>
-        <div className="flex gap-4 ml-10">
-        </div>
+        <div className="flex gap-4 ml-10"></div>
       </nav>
       <Sheet>
         <SheetTrigger asChild>
@@ -35,17 +35,18 @@ export function Header() {
               href="#"
               className="flex items-center gap-2 text-lg font-semibold"
             >
-               <span className="font-bold text-white bg-black px-1 rounded-md transition-transform transform hover:scale-110">Text</span>
-               <span className="font-bold text-black bg-white px-1 rounded-md transition-transform transform hover:scale-110">Speech</span>
+              <span className="font-bold text-white bg-black px-1 rounded-md transition-transform transform hover:scale-110">
+                Text
+              </span>
+              <span className="font-bold text-black bg-white px-1 rounded-md transition-transform transform hover:scale-110">
+                Speech
+              </span>
             </Link>
-            <div className="flex flex-col gap-4">
-            </div>
+            <div className="flex flex-col gap-4"></div>
           </nav>
         </SheetContent>
       </Sheet>
-      <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
-       
-      </div>
+      <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4"></div>
     </header>
   );
 }

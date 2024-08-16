@@ -123,6 +123,7 @@ export function GenerateSoundForm({ handleGetAudio }: GenerateSoundFormProps) {
                   <Textarea
                     disabled={formSubmitting}
                     rows={6}
+                    className={"resize-none"}
                     placeholder="Enter your text here..."
                     {...field}
                   />
