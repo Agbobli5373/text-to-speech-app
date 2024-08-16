@@ -9,7 +9,7 @@ export class HuggingFaceService {
         this.token = token;
     }
 
-    async generateAudio(modelUrl: string, input: any): Promise<ArrayBuffer> {
+    async generateAudio(modelUrl: string, input: Record<string, unknown>): Promise<ArrayBuffer> {
         const response = await fetch(modelUrl, {
             headers: {
                 Authorization: `Bearer ${this.token}`,
