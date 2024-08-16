@@ -92,7 +92,7 @@ export function GenerateSoundForm({ handleGetAudio }: GenerateSoundFormProps) {
                 >
                   <FormControl>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select a verified email to display" />
+                      <SelectValue placeholder="Select Sound Model" />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
