@@ -1,5 +1,6 @@
+
 /**
- * Service class for interacting with the Hugging Face API.
+ * HuggingFaceService class for generating audio using a Hugging Face model.
  */
 export class HuggingFaceService {
     private token: string;

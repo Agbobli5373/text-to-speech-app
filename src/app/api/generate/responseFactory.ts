@@ -1,3 +1,6 @@
+/**
+ * ResponseFactory class responsible for creating audio responses.
+ */
 export class ResponseFactory {
     static createAudioResponse(audioData: ArrayBuffer): Response {
         return new Response(audioData, {
