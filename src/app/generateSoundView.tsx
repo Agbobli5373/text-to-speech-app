@@ -1,4 +1,4 @@
-'use client' 
+"use client";
 
 import { GenerateSoundForm } from "@/components/generateSoundForm";
 import Loader from "@/components/loader";
@@ -11,11 +11,10 @@ export default function GenerateSoundView() {
   // State to manage loading status and audio URL
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
-  
 
   /**
    * Handles the process of fetching audio data using the provided request.
-   * @param {CreateSoundRequest} request - The request containing model URL and text.
+   * @param {RequestBody} request - The request containing model URL and text.
    */
   const handleGetAudio = async (request: RequestBody) => {
     setIsLoading(true);
