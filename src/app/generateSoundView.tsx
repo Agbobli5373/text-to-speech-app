@@ -1,5 +1,4 @@
 "use client";
-
 import { GenerateSoundForm } from "@/components/generateSoundForm";
 import Loader from "@/components/loader";
 import { useState } from "react";
